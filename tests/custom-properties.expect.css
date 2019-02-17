@@ -1,0 +1,7 @@
+:root {
+  --customFontFamily: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.second {
+  font-family: var(--customFontFamily);
+}

@@ -1,0 +1,7 @@
+:root {
+  --customFontFamily: system-monospace;
+}
+
+.second {
+  font-family: var(--customFontFamily);
+}
