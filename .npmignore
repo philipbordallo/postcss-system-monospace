@@ -1,0 +1,9 @@
+node_modules/
+*.log*
+
+configs/
+docs/
+src/
+tests/
+.travis.yml
+.editorconfig
