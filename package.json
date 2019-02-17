@@ -1,0 +1,45 @@
+{
+  "name": "postcss-system-monospace",
+  "version": "0.1.0",
+  "description": "System monospace font families",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "keywords": [
+    "system",
+    "font",
+    "family",
+    "monospace"
+  ],
+  "author": "Philip Bordallo",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "build": "rollup --config configs/rollup.config.js --silent",
+    "lint": "eslint --config configs/eslint.config.js ./src/",
+    "pretest": "npm run build && npm run lint",
+    "test": "postcss-tape",
+    "postversion": "git push && git push --tags"
+  },
+  "postcssConfig": {
+    "config": "./configs/tape.config.js",
+    "fixtures": "./tests/",
+    "plugin": "./dist/index.cjs.js"
+  },
+  "babel": {
+    "presets": [
+      "./configs/babel.config.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@philipbordallo/eslint-config": "^2.3.0",
+    "eslint": "^5.14.0",
+    "postcss-tape": "^4.0.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2"
+  },
+  "dependencies": {
+    "postcss": "^7.0.14"
+  }
+}
