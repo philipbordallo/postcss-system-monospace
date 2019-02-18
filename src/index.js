@@ -11,9 +11,9 @@ const SYSTEM_MONOSPACE_FONTS = createFontFamilyString([
   'Menlo', // macOS & iOS
   'Monaco', // macOS
   'Consolas', // Windows
-  'Liberation Mono',
-  'Courier New',
-  'monospace',
+  'Liberation Mono', // Linux
+  'Courier New', // fallback
+  'monospace', // fallback
 ]);
 
 export default postcss.plugin(PLUGIN_NAME, () => (root) => {
