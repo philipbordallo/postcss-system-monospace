@@ -22,7 +22,7 @@
   "browserslist": [
     "node 12",
     "node 10",
-    "node 8",
+    "node 8"
   ],
   "scripts": {
     "prepublishOnly": "npm test",
