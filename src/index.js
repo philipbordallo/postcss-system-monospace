@@ -18,6 +18,7 @@ const SYSTEM_MONOSPACE_FONTS = createFontFamilyString([
 
 export default postcss.plugin(PLUGIN_NAME, () => (root) => {
   root.walkDecls(MATCH_FONT_FAMILY, (decl) => {
-    decl.value = decl.value.replace(/system-monospace/, SYSTEM_MONOSPACE_FONTS); // eslint-disable-line no-param-reassign
+    // eslint-disable-next-line no-param-reassign
+    decl.value = decl.value.replace(/system-monospace/, SYSTEM_MONOSPACE_FONTS);
   });
 });
