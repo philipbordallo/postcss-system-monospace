@@ -54,6 +54,6 @@
     "rollup-plugin-babel": "^4.4.0"
   },
   "dependencies": {
-    "postcss": "^7.0.32"
+    "postcss": "^8.2.10"
   }
 }
