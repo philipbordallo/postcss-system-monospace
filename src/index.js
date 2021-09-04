@@ -1,9 +1,4 @@
-import postcss from 'postcss';
-
 import createFontFamilyString from './createFontFamilyString';
-
-
-const PLUGIN_NAME = 'postcss-system-monospace';
 
 const MATCH_FONT_FAMILY = /(?:^(?:-|\\002d){2})|(?:^font(?:-family)?$)/i;
 const SYSTEM_MONOSPACE_FONTS = createFontFamilyString([
@@ -16,9 +11,12 @@ const SYSTEM_MONOSPACE_FONTS = createFontFamilyString([
   'monospace', // fallback
 ]);
 
-export default postcss.plugin(PLUGIN_NAME, () => (root) => {
-  root.walkDecls(MATCH_FONT_FAMILY, (decl) => {
-    // eslint-disable-next-line no-param-reassign
-    decl.value = decl.value.replace(/system-monospace/, SYSTEM_MONOSPACE_FONTS);
-  });
+export default () => ({
+  postcssPlugin: 'postcss-system-monospace',
+  Once(root) {
+    root.walkDecls(MATCH_FONT_FAMILY, (decl) => {
+      // eslint-disable-next-line no-param-reassign
+      decl.value = decl.value.replace(/system-monospace/, SYSTEM_MONOSPACE_FONTS);
+    });
+  },
 });

@@ -28,10 +28,10 @@ Check out the <a href="https://philipbordallo.github.io/postcss-system-monospace
 
 ```sh
 # npm
-npm install --save-dev postcss-system-monospace
+npm install --save-dev postcss postcss-system-monospace
 
 # or yarn
-yarn add --dev postcss-system-monospace
+yarn add --dev postcss postcss-system-monospace
 ```
 
 

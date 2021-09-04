@@ -44,15 +44,16 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/preset-env": "^7.10.2",
-    "@philipbordallo/eslint-config": "^2.5.0",
-    "eslint": "^7.2.0",
-    "postcss-tape": "^5.0.2",
-    "rollup": "^2.13.1",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "@philipbordallo/eslint-config": "^4.0.1",
+    "eslint": "^7.32.0",
+    "postcss": "^8.3.6",
+    "postcss-tape": "^6.0.1",
+    "rollup": "2.13.1",
     "rollup-plugin-babel": "^4.4.0"
   },
-  "dependencies": {
-    "postcss": "^7.0.32"
+  "peerDependencies": {
+    "postcss": "^8.3.6"
   }
 }
