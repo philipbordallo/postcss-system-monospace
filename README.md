@@ -2,7 +2,6 @@
 > Monospace fonts from your operating system
 
 [![NPM Version][npm-img]][npm-url]
-[![Build Status][cli-img]][cli-url]
 [![Dependency Status][david-img]][david-url]
 
 Most systems have their own monospace font which `font-family: monospace` does not observe. This [PostCSS][postcss] plugin gives the ability to use the client system's monospace font via CSS.
@@ -81,9 +80,6 @@ Then use the font-family name `system-monospace` where ever needed.
 
 [david-img]: https://img.shields.io/david/philipbordallo/postcss-system-monospace.svg
 [david-url]: https://david-dm.org/philipbordallo/postcss-system-monospace
-
-[cli-img]: https://img.shields.io/travis/philipbordallo/postcss-system-monospace.svg
-[cli-url]: https://travis-ci.org/philipbordallo/postcss-system-monospace
 
 [npm-img]: https://img.shields.io/npm/v/postcss-system-monospace.svg
 [npm-url]: https://www.npmjs.com/package/postcss-system-monospace
