@@ -2,6 +2,6 @@
   --customFontFamily: system-monospace;
 }
 
-.second {
+.custom-properties {
   font-family: var(--customFontFamily);
 }

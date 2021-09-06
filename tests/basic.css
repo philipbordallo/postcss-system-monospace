@@ -1,7 +1,12 @@
-.first {
+.font-family {
   font-family: system-monospace;
 }
 
-.second {
+.font {
   font: system-monospace;
+}
+
+.other-properties {
+  counter-reset: system-monospace;
+  background-image: url(system-monospace.jpg);
 }

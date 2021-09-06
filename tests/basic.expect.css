@@ -1,7 +1,12 @@
-.first {
+.font-family {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.second {
+.font {
   font: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.other-properties {
+  counter-reset: system-monospace;
+  background-image: url(system-monospace.jpg);
 }
