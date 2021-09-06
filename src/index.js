@@ -15,7 +15,6 @@ export default () => ({
   postcssPlugin: 'postcss-system-monospace',
   Once(root) {
     root.walkDecls(MATCH_FONT_FAMILY, (decl) => {
-      // eslint-disable-next-line no-param-reassign
       decl.value = decl.value.replace(/system-monospace/, SYSTEM_MONOSPACE_FONTS);
     });
   },
